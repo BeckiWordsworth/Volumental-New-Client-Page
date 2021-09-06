@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Balance</title>
+  <link rel="shortcut icon" href="./images/volumental-favicon.ico">
+  <link rel="stylesheet" href="./main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar" id="top-navbar">
+        <div class="nav-logo">
+          <img src="./images/logo-volumental.svg" />
+        </div>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="https://www.volumental.com/product/">Product</a>
+              </li>
+              <li>
+                <a href="https://www.volumental.com/partners/">Customers</a>
+              </li>
+              <li>
+                <a href="https://www.volumental.com/future/">Research</a>
+              </li>
+              <li>
+                <a href="https://www.volumental.com/jobs/">Jobs</a>
+              </li>
+              <li>
+                <a href="https://www.volumental.com/press/">Press</a>
+              </li>
+              <li>
+                <a href="https://www.volumental.com/team/">Team</a>
+              </li>
+              <li>
+                <a href="https://www.volumental.com/contact/">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <a href="javascript:void(0);" onclick="hamburgerMenu()">
+              <div class="icon-bar"></div>
+              <div class="icon-bar"></div>
+              <div class="icon-bar"></div>
+            </a>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="hero">
+
+    </div>
+
+    <div class="grid">
+      <div class="column">
+
+        <div class="bio">
+          <h1>New Balance</h1>
+          <p>New Balance is known not just for the quality of their footwear, but for their vast range of widths and sizes. In summer 2016, Volumental and New Balance teamed up to provide customers with the ultimate in-store experience, integrating
+            Volumental’s in-store scanning solution with New Balance's proprietary gait analysis technology, “StrideID”. Together, New Balance and Volumental ensure a faster and smoother fitting process in-store.</p>
+          <p>
+            To quote Jonathan Clarke, International Retail Director: "Our customers love it and our staff love it."</p>
+        </div>
+
+        <div class="row">
+          <div class="text">
+            <div class="logo-center">
+              <img src="./images/logo-nb.png" alt="New Balance logo" />
+            </div>
+            <p>
+              The nagging frustrations of ill-fitting shoes could soon be a thing of the past thanks to technology developed by Swedish company Volumental.
+            </p>
+          </div>
+          <div class="media">
+            <img src="./images/grid1-nb.jpg" alt="Foot-scanning in progress">
+                </div>
+          </div>
+
+          <div class="row">
+            <div class="media">
+                <img src="./images/grid2-nb.jpg" alt="In-store photo">
+              </div>
+              <div class="text">
+                <p>
+                  New Balance has partnered with Volumental to install 3-D foot scanners in select stores worldwide that use foot measurements such as width, height and girth to determine a customer’s ideal shoe model and shoe size.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="text">
+                <p>
+                  Although the technology behind Volumental’s scanners may be complex, the process is simple: Customers step into the 3-D foot scanner, which transfers information from their feet to a tablet within seconds. The data is then matched with the proper shoes and size for a perfect fit.
+                </p>
+                <p>
+                  <a href="https://www.newbalance.com" target="_blank">Visit newbalance.com</a>
+                </p>
+              </div>
+              <div class="media">
+                <div class="youtube-container">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OsdbnTJxbQI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+
+      <div>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com/Volumental" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="http://twitter.com/Volumental" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/company/volumental" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.volumental.com/legal/">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="newsletter">
+        <p>
+          <strong>Sign up for our newsletter to get the latest on our new projects</strong> <a href="javascript:void(0);" onclick="newsletterMenu()"><img id="open-newsletter" src="./images/expand-button-small.png"></a>
+        </p>
+      </div>
+      <div class="sign-up-style sign-up-hidden" id="sign-up">
+       <form action="http://httpbin.org/anything" method="post">
+         <input type="text" name="name" placeholder="Name" required />
+         <input type="email" name="email" placeholder="E-mail" required />
+         <button>Submit</button>
+       </form>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function hamburgerMenu() {
+      var x = document.getElementById("top-navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+
+    function newsletterMenu() {
+      var x = document.getElementById("sign-up");
+      var y = document.getElementById("open-newsletter");
+      if (x.className === "sign-up-style sign-up-hidden") {
+        x.className = "sign-up-style sign-up-visible";
+        y.src = "./images/collapse-button-small.png";
+      } else {
+        x.className = "sign-up-style sign-up-hidden";
+        y.src = "./images/expand-button-small.png";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
